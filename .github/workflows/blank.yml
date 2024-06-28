@@ -1,7 +1,7 @@
 name: A workflow for a test
-on: 
-  schedule:
-    - cron: '*/5 * * * *'
+on: push
+  # schedule:
+  #   - cron: '*/5 * * * *'
 jobs: 
   build: 
     name: Hello Word actions
