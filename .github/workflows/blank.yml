@@ -1,0 +1,13 @@
+name: A workflow for a test
+on: 
+  schedule:
+    - cron: '*/5 * * * *'
+jobs: 
+  build: 
+    name: Hello Word actions
+    runs-on: ubuntu-lastest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: ./action-a
+      with:
+        MY_NAME: "Mauricio"
